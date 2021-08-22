@@ -1,0 +1,50 @@
+#navbar{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(187, 222, 255, 0.25);
+}
+.logo-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #0A2540;
+    position: absolute;
+    /* width: 140px;
+    height: 42px; */
+    left: 80px;
+    top: 5px;
+}
+
+#MenuItem{
+    font-family: Lato;
+    font-style: normal;
+    color: #8E8E93;
+}
+
+.button-nav{
+    font-family: Lato;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient(96.83deg, #1EADFE 0%, #0085FF 105.85%);
+    box-shadow: 2px 4px 9px rgba(14, 152, 255, 0.25);
+    border-radius: 30px;
+}
+
+@media (min-width: 600px){ 
+    .logo-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .logo-img{
+        position: absolute;
+        left:25px;
+        bottom: 0px;
+    }
+    .logo-title{
+        position: absolute;
+        top:10px;
+        font-size: 28px;
+    }
+}
