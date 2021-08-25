@@ -1,0 +1,64 @@
+.Offerings{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background: #E5F5FE;
+    align-content: center;
+    padding: 30px 50px 30px 50px;
+}
+
+.Offerings-title{
+    top: 107px;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: Lato;
+    font-style: normal;
+    
+    color: #0A2540;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 54px;
+}
+
+.Offerings-grid{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#Card{
+    width: fit-content;
+    background: #ffffff;
+    /* box-shadow: 5px 12px 35px 1px rgba(135, 183, 255, 0.15); */
+    border-radius: 35px;
+    border:none;
+    padding: 20px 10px 20px 10px;
+    justify-content:"center";
+    align-content: "center";
+    color: #000;
+}
+#Card-img{
+    padding: 30px;
+}
+
+#subtitle{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0A2540;
+}
+
+#description{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    padding:20px;
+
+    color: rgba(10, 37, 64, 0.9);
+}

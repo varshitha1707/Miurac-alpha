@@ -1,11 +1,22 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import HomeM from './Pages/Home-msme/HomeM';
 import './App.css';
-import Nav from './Components/Reuse-components/NavBar/Nav';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+       <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/home">
+            <HomeM />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

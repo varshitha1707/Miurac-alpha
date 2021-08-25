@@ -8,7 +8,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 // import MoreIcon from '@material-ui/icons/MoreVert';
-import logo from '../../../Assets/miurac.svg';
+import logo from '../../../Assets/img/miurac.svg';
 import '../NavBar/Nav.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -23,30 +23,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
-  },
-  search: {
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
-      width: 'auto',
-    },
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   inputRoot: {
     color: 'inherit',
@@ -150,11 +126,11 @@ export default function PrimarySearchAppBar() {
       <AppBar id= "navbar" position="static" >
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-              <div className="logo-desktop">
-              <img src={logo} alt="logo" className="logo-img" />
-              <div className="logo-title">
-              MIURAC
-              </div>
+              <div id="logo-desktop">
+                <img src={logo} alt="logo" className="logo-img" />
+                <div className="logo-title">
+                  MIURAC  
+                </div>
               </div>
           </Typography>
           <div className={classes.grow} />
@@ -177,11 +153,11 @@ export default function PrimarySearchAppBar() {
           <div className={classes.sectionMobile} id="MenuItem">
               
     <div className="logo-mobile">
-    <img src={logo} alt="logo" className="logo-img" />
-    <div className="logo-title">
-    MIURAC
+      <img src={logo} alt="logo" className="logo-img" />  
+      <div className="logo-title">
+        MIURAC
+      </div>
     </div>
-</div>
             <IconButton
               aria-label="show more"
               aria-controls={mobileMenuId}
