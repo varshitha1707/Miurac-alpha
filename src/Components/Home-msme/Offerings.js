@@ -64,12 +64,15 @@ export default function Offerings() {
         justifyContent="center"
         alignItems="center"
         >
+            {/* mapping out the cards information */}
             {offering.map(note =>(
             <Grid item xs={12} sm={8} md={6} lg={4}>
+                    {/* Card image */}
                 <Card id="Card" elevation={2}>
                     <CardMedia align="center" id="Card-img">
                         <img src={note.img} alt="img" />
                     </CardMedia>
+                    {/* Card title and description */}
                     <CardContent>
                         <Typography 
                         id="subtitle"
