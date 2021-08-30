@@ -81,7 +81,7 @@ function Testimonials() {
                             style={{
                                 display:"block",
                                 width:"90%",
-                                margin:"auto",
+                                margin:"60px auto 10px auto",
                                 alignSelf:"center",
                                 justifyContent:"center",
 
