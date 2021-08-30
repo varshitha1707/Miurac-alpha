@@ -49,7 +49,6 @@ function TestimonialC() {
 
 
     const breakpoints =[
-        { width: 1, itemsToShow: 1 },
         { width: 550, itemsToShow: 1 },
         { width: 768, itemsToShow: 2 },
         { width: 1200, itemsToShow: 3 },
@@ -64,7 +63,7 @@ function TestimonialC() {
                     fontFamily: 'Poppins',
                     fontStyle: 'normal',
                     fontWeight: 'bold',
-                    fontSize: '50px',
+                    fontSize: '46px',
                     color: '#4D2DB0',
                 }}>
                     {/* title */}
@@ -89,7 +88,7 @@ function TestimonialC() {
                                 alignItems="center"
                                 >
                                     {/* grid items */}
-                                    <Grid item  key={testimonial.id}
+                                    <Grid item xs={12} sm={12} md={12} lg={12} key={testimonial.id}
                                     style={{
                                         marginTop:"90px",
                                     }}
