@@ -1,6 +1,7 @@
 import React from 'react'
 import Offerings from '../../Components/Home-msme/Offerings';
 import Hero from '../../Components/Home/Hero/Hero';
+import TestimonialC from '../../Components/Home/Testimonials/TestimonialC';
 import Testimonials from '../../Components/Home/Testimonials/Testimonials';
 import Trial from '../../Components/Home/Trial/Trial';
 import Values from '../../Components/Home/Values/Values';
@@ -14,7 +15,10 @@ export default function Home() {
             {/* <Values/> */}
             {/* <Offerings/> */}
             {/* <Trial/> */}
-            <Testimonials/>
+            {/* below is the testimonials without carousel*/}
+            {/* <Testimonials/>  */}
+            {/* below is the testimonials with carousel*/}
+            <TestimonialC/>
         </div>
     )
 }

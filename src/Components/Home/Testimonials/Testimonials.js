@@ -1,4 +1,4 @@
-import { Container,Grid, Card, Paper } from '@material-ui/core'
+import { Container,Grid, Paper } from '@material-ui/core'
 import React from 'react'
 import photo from '../../../Assets/img/Testimonials/photo.png'
 import quote1 from '../../../Assets/img/Testimonials/quote1.svg'
@@ -8,6 +8,7 @@ import line from '../../../Assets/img/Testimonials/lineabovename.svg'
 import ratings from '../../../Assets/img/Testimonials/ratings.svg'
 
 function Testimonials() {
+    // testimonial data
     const testimonial = [
         {
             id:1,
@@ -36,7 +37,7 @@ function Testimonials() {
     ]
     return (
         <Container>
-            {/* this belo grid will contai the testimonial items */}
+            {/* this below grid will contai the testimonial items */}
             <Grid container 
             spacing={8} 
             justifyContent="center"
