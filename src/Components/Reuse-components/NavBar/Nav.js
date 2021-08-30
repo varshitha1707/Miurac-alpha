@@ -144,7 +144,7 @@ export default function PrimarySearchAppBar() {
             <MenuItem>
                 <p>Contact us</p>
             </MenuItem>
-            <MenuItem>
+            <MenuItem hover="none">
                 <button className="button-nav">
                     Apply Now
                 </button>

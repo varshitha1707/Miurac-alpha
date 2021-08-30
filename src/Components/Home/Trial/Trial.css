@@ -1,0 +1,49 @@
+.outerbox1{
+    border:1px solid blue; 
+    height:160px; 
+    width:50%; 
+    display:flex; 
+    margin:auto;
+}
+.innerbox1{
+    background-color:#8197FF; 
+    border:1px solid red;
+    height:100px;
+    width:50%;  
+    margin:auto;
+}
+
+.outerbox2{
+        border:1px solid blue; 
+        height:160px; 
+        width:50%;
+        display:flex;  
+        margin:auto;
+}
+
+.innerbox2{
+        background-color:#8197FF;
+        border:1px solid red;
+        height:100px; 
+        width:50%; 
+        margin:-40px auto;
+}
+
+.outerbox3{
+        border:1px solid blue;
+        background-image: url("../../../Assets/img/Values/value2.png");
+        background-repeat: no-repeat;
+        height:300px;
+        width:40%;
+        display:flex;
+        margin:auto;
+}
+
+.innerbox3{
+        background-color:#8196ff88; 
+        backdrop-filter: blur(2px);
+        border:1px solid red;
+        height:150px;
+        width:50%; 
+        margin:auto;
+}
