@@ -49,6 +49,7 @@ function TestimonialC() {
 
 
     const breakpoints =[
+        
         { width: 550, itemsToShow: 1 },
         { width: 768, itemsToShow: 2 },
         { width: 1200, itemsToShow: 3 },
@@ -56,7 +57,7 @@ function TestimonialC() {
     ]
     return (
             <div className="Testimonials" style={{
-                margin:"20px",
+                marginTop:"100px",
             }}>
                 <img src={rectangle} alt=""/>
                 <div className="Testimonials-text" style={{
@@ -73,6 +74,7 @@ function TestimonialC() {
                 <Carousel 
                 breakPoints={breakpoints} 
                 enableAutoPlay={true}
+                showArrows={false}
                 style={{
                     width:"95%",
                     margin:"auto",

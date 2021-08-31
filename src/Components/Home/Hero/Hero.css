@@ -31,7 +31,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 62px;
-    text-align: justify;
+    /* text-align: justify; */
     color: #0A2540;
 }
 
@@ -45,7 +45,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    text-align: justify;
+    /* text-align: justify; */
     color: #0A2540;
 }
 
@@ -84,9 +84,6 @@
 }
 
 
-.Clients{
-    border: 1px solid green;
-}
 
 @media (max-width: 1201px) {
     .Hero-container{
@@ -150,7 +147,7 @@
 
     .subtitle{
     font-size: 12px;
-    text-align: justify;
+    /* text-align: justify; */
     color: #0A2540;
     line-height: normal;
     }

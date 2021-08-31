@@ -10,15 +10,11 @@ import Nav from '../../Components/Reuse-components/NavBar/Nav';
 export default function Home() {
     return (
         <div className="Home">
-            {/* <Nav/> */}
-            {/* <Hero/> */}
-            {/* <Values/> */}
-            {/* <Offerings/> */}
-            {/* <Trial/> */}
-            {/* below is the testimonials without carousel*/}
-            {/* <Testimonials/>  */}
-            {/* below is the testimonials with carousel*/}
-            <TestimonialC/>
+            <Nav/>
+            <Hero/>
+            <br/>
+            <Values/>
+            {/* <TestimonialC/> */}
         </div>
     )
 }

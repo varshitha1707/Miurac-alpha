@@ -4,6 +4,7 @@ import icon1 from '../../../Assets/img/Hero/subtitle-icon1.svg'
 import icon2 from '../../../Assets/img/Hero/subtitle-icon2.svg'
 import icon3 from '../../../Assets/img/Hero/subtitle-icon3.svg'
 import herosvg from '../../../Assets/img/Hero/home-img.svg'
+import Clients from '../../Reuse-components/Clients/Clients'
 
 export class Hero extends Component {
     render() {
@@ -65,9 +66,7 @@ export class Hero extends Component {
                         </div>
                 </div> 
                 {/* clients carousel */}
-                <div className="Clients">
-                        <h3>hello i am clients</h3>
-                </div>
+                <Clients/>
             </div>
         )
     }
