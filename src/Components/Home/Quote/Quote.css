@@ -1,0 +1,62 @@
+.Quote{
+    background:#0A2540; 
+    margin:0px; 
+    padding:40px ;
+    padding-bottom: 70px;
+    width: inherit;
+    height: max-content;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+}
+
+.all-text{       
+    width:50%;
+    margin:auto
+}
+
+.title{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color:#FFFFFF; 
+    text-align:center; 
+}
+
+.text{
+    color:#F2F2F7;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 35px;
+    font-size: 20px; 
+    text-align:left; 
+}
+
+
+@media (max-width: 840px) {
+    .title{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .all-text{       
+        width:100%;
+        margin:auto
+    }
+}
+
+@media (max-width: 350px) {
+    .title{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .all-text{       
+        width:100%;
+        margin:auto
+    }
+}

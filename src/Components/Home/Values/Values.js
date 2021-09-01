@@ -74,28 +74,22 @@ export default function Values() {
                 <Grid container spacing={5} justifyContent="center" direction="column">
                 {/* mapping out the values */}
                 {values.map(data=>(
-                    <Grid container className="value" key={data.id} direction={mapp(data.id)} style={{margin:"20px"}} >
-                        <Grid item xs={12} sm={10} md={8} lg={6}>
-                            <div >
+                    <Grid container className="value" key={data.id} direction={mapp(data.id)}>
+                        <Grid item xs={10} sm={8} md={6} lg={6}>
+                            <div style={{ paddingLeft:"30px"}}>
                                 {/* text */}
-                                <div style={{padding:"0px", width:"85%"}}>
-                                    <h3 style={{fontFamily:'Lato',
-                                        fontWeight: '800',
-                                        fontSize: '45px',
-                                        color: '#0A2540',}}>
+                                <div style={{ width:"85%"}}>
+                                    <h3 className="value-title">
                                             {data.title}
                                         </h3>
-                                    <p style={{fontFamily:'Lato',
-                                        fontSize: '18px',
-                                        color: 'rgba(10, 37, 64, 0.9)',}}>
+                                    <p className="value-text" >
                                             {data.text}
                                         </p>
                                 </div>
                                 {/* image */}
                                 <div>
                                     <img src={data.img} alt="" className="value-img" width="85%" />
-                                </div>
-                                    
+                                </div>    
                             </div> 
                         </Grid>  
                     </Grid> 

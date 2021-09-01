@@ -1,11 +1,12 @@
 .Offerings{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
     background: #E5F5FE;
     align-content: center;
-    padding: 0px 60px;
+    padding: 60px 60px;
 }
 
 .Offerings-title{

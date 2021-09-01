@@ -1,8 +1,40 @@
 .Values{
     margin-top: 90px;
+    width: inherit;
     padding:30px;
     background: #E5F5FE;
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+.value-title{
+    font-family:'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: #0A2540;
+}
+
+.value-text{
+    font-family:'Lato', sans-serif;
+    font-size: 18px;
+    color: rgba(10, 37, 64, 0.9);
+}
+.value-img{
+    width: 90%;
+}
+
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 350px) {
+
+    .value-title{
+        font-size: 35px;
+    }
+    
+    .value-text{
+        font-size: 12px;
+    }
 }
