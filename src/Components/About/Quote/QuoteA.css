@@ -1,0 +1,74 @@
+.QuoteA{
+    background:#0A2540; 
+    margin:0px; 
+    padding:40px ;
+    padding-bottom: 70px;
+    width: inherit;
+    height: max-content;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+}
+
+.QuoteA-all-text{       
+    width:50%;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+}
+
+.QuoteA-title{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color:#FFFFFF; 
+    text-align:center; 
+}
+.QuoteA-btn{
+    margin: inherit;
+}
+.button-blue-filled{
+    background: linear-gradient(96.83deg, #1EADFE 0%, #0085FF 105.85%);
+    box-shadow: 2px 4px 9px rgba(14, 152, 255, 0.25);
+    border-radius: 30px;
+    border: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin-left: 30%;
+    padding:15px;
+    height: 60px;
+    width: 200px;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 840px) {
+    .QuoteA-title{
+        font-size: 20px;
+    }
+    .QuoteA-text{
+        font-size: 15px;
+    }
+    .QuoteA-all-text{       
+        width:100%;
+        margin:auto
+    }
+}
+
+@media (max-width: 350px) {
+    .QuoteA-title{
+        font-size: 15px;
+    }
+    .QuoteA-text{
+        font-size: 10px;
+    }
+    .QuoteA-all-text{       
+        width:100%;
+        margin:auto
+    }
+}

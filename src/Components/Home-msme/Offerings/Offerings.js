@@ -3,12 +3,12 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import './Offerings.css'
 import { CardContent, CardHeader, CardMedia, Container, Typography } from '@material-ui/core';
-import uxui from '../../Assets/img/Offerings/uxuidesign.svg'
-import webdev from '../../Assets/img/Offerings/webdev.svg'
-import appdev from '../../Assets/img/Offerings/appdev.svg'
-import graphic from '../../Assets/img/Offerings/graphicdesign.svg'
-import intools from '../../Assets/img/Offerings/internaltools.svg'
-import prodev from '../../Assets/img/Offerings/productdev.svg'
+import uxui from '../../../Assets/img/Offerings/uxuidesign.svg'
+import webdev from '../../../Assets/img/Offerings/webdev.svg'
+import appdev from '../../../Assets/img/Offerings/appdev.svg'
+import graphic from '../../../Assets/img/Offerings/graphicdesign.svg'
+import intools from '../../../Assets/img/Offerings/internaltools.svg'
+import prodev from '../../../Assets/img/Offerings/productdev.svg'
 
 export default function Offerings() {
 
@@ -60,17 +60,18 @@ export default function Offerings() {
         </div>
         {/* Grid */}
         <Grid container 
-        spacing={4} 
+        id="Container"
+        spacing={2} 
         justifyContent="center"
         alignItems="center"
         >
             {/* mapping out the cards information */}
             {offering.map(note =>(
-            <Grid item xs={12} sm={8} md={6} lg={4} >
+            <Grid item xs={8} sm={7} md={6} lg={4} >
                     {/* Card image */}
-                <Card id="Card" elevation={2} style={{ height:450}}>
-                    <CardMedia align="center"  id="Card-img">
-                        <img src={note.img} alt="img" />
+                <Card id="Card" elevation={2} >
+                    <CardMedia align="center"  >
+                        <img src={note.img} alt="img" id="Card-img"/>
                     </CardMedia>
                     {/* Card title and description */}
                     <CardContent>
@@ -83,7 +84,6 @@ export default function Offerings() {
                         </Typography>
                         <Typography
                         id="description" 
-                        align="justify"
                         >
                             {note.description}
                         </Typography>

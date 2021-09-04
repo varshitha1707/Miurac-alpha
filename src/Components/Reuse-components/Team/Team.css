@@ -1,0 +1,95 @@
+.Team{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 40px;
+}
+.Team-text{
+    text-align:center ;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 25px;
+    color: #0A2540;
+}
+.Team-container{
+    /* margin: auto; */
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.Team-item{
+    /* border: black solid 1px; */
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top:40px
+    /* padding: 40px; */
+    /* background-color: aquamarine; */
+}
+
+.Team-img{
+    display: block;
+    /* border: black solid 1px; */
+    /* width:50%; */
+    height: 350px;
+    margin:auto;
+}
+
+.Team-image{
+    width: 100%;
+    background: #E5F5FE;
+    /* border: black solid 1px;  */
+}
+
+.Team-name{
+    display: block;
+    /* border: black solid 1px; */
+    width:60%;
+    margin:auto;
+    text-align:center ;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #0A2540;
+}
+
+.Team-designation{
+    
+    text-align:center ;
+    /* display: block; */
+    /* border: black solid 1px; */
+    width:60%;
+    padding-top: -10px;
+    margin: auto ;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    /* identical to box height */
+    
+    
+    color: #0A2540;
+}
+
+@media (max-width: 768px) {
+    .Team-img{
+        height: 200px;
+    }
+    .Team-text{
+        font-size: 20px;
+    }
+}
+
+/* .grid-container{
+    background-color: aquamarine;
+    margin: auto;
+} */
+/* .grid-item{
+    background-color: #0A2540;
+    margin: auto;
+} */

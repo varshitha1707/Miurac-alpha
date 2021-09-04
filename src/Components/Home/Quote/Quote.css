@@ -1,8 +1,7 @@
 .Quote{
     background:#0A2540; 
     margin:0px; 
-    padding:40px ;
-    padding-bottom: 70px;
+    padding:90px ;
     width: inherit;
     height: max-content;
     align-items:center;
@@ -10,12 +9,12 @@
     align-content:center;
 }
 
-.all-text{       
+.Quote-all-text{       
     width:50%;
     margin:auto
 }
 
-.title{
+.Quote-title{
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -24,7 +23,7 @@
     text-align:center; 
 }
 
-.text{
+.Quote-text{
     color:#F2F2F7;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -36,26 +35,26 @@
 
 
 @media (max-width: 840px) {
-    .title{
+    .Quote-title{
         font-size: 20px;
     }
-    .text{
+    .Quote-text{
         font-size: 15px;
     }
-    .all-text{       
+    .Quote-all-text{       
         width:100%;
         margin:auto
     }
 }
 
 @media (max-width: 350px) {
-    .title{
+    .Quote-title{
         font-size: 15px;
     }
-    .text{
+    .Quote-text{
         font-size: 10px;
     }
-    .all-text{       
+    .Quote-all-text{       
         width:100%;
         margin:auto
     }

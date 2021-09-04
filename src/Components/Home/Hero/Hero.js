@@ -5,6 +5,7 @@ import icon2 from '../../../Assets/img/Hero/subtitle-icon2.svg'
 import icon3 from '../../../Assets/img/Hero/subtitle-icon3.svg'
 import herosvg from '../../../Assets/img/Hero/home-img.svg'
 import Clients from '../../Reuse-components/Clients/Clients'
+import { Grid } from '@material-ui/core'
 
 export class Hero extends Component {
     render() {
@@ -30,9 +31,13 @@ export class Hero extends Component {
 
         return (
             <div className="Hero">
-                <div className="Hero-container">
+                <Grid container spacing={0} className="Hero-container" direction={window.outerWidth<900?'row':'row-reverse'}>
+                    {/* hero image div */}
+                        <Grid item xs={10} sm={10} md={8} lg={6} className="Hero-img" style={{width:'85%'}}>
+                            <img src={herosvg} alt="logo" className="home-img"  style={{width:'100%'}}/> 
+                        </Grid>
                     {/* hero text div */}
-                    <div className="Hero-text" >
+                    <Grid item xs={10} sm={10} md={8} lg={5}  className="Hero-text" >
                         {/* hero title text */}
                             <div className="Hero-title">
                                 <span>We invest in your ideas 
@@ -51,6 +56,7 @@ export class Hero extends Component {
                         ))}
                         </div>
                         {/* hero buttons */}
+                        <br/>
                             <div className="Hero-buttons">
                                 <button className="button-filled">
                                 Get Funded
@@ -59,12 +65,8 @@ export class Hero extends Component {
                                 Boost your startup
                                 </button>
                         </div>
-                    </div>
-                    {/* hero image div */}
-                        <div className="Hero-img">
-                            <img src={herosvg} alt="logo" className="home-img"  style={{width:'95%'}}/> 
-                        </div>
-                </div> 
+                    </Grid >
+                </Grid > 
                 {/* clients carousel */}
                 <Clients/>
             </div>

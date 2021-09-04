@@ -1,177 +1,82 @@
 import React from 'react';
-import { alpha, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-// import MoreIcon from '@material-ui/icons/MoreVert';
 import logo from '../../../Assets/img/miurac.svg';
-import '../NavBar/Nav.css';
+import Drawer from '@material-ui/core/Drawer';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import './Nav.css';
+import { MenuItem } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
-  },
-  inputRoot: {
-    color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
-  sectionDesktop: {
-    display: 'none',
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
-    },
-  },
-  sectionMobile: {
-    display: 'flex',
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
-  },
-}));
 
-export default function PrimarySearchAppBar() {
-  const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+export default function NavBar() {
+  const [open, setOpen] = React.useState(false);
 
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handleDrawerOpen = () => {
+    setOpen(true);
   };
 
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
+  const handleDrawerClose = () => {
+    setOpen(false);
   };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-  
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={mobileMenuId} MenuItem
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <p>About us</p>
-      </MenuItem>
-      <MenuItem>
-        <p>Solutions</p>
-      </MenuItem>
-      <MenuItem>
-        <p>Contact us</p>
-      </MenuItem>
-      <MenuItem>
-        <button className="button-nav">
-            Apply Now
-        </button>
-      </MenuItem>
-    </Menu>
-  );
 
   return (
-    <div className={classes.grow }  >
-      <AppBar id= "navbar" position="static" >
+      <div id= "navbar-container">
+        <AppBar id= "navbar" >
         <Toolbar>
-          <Typography className={classes.title} variant="h6" noWrap>
-              <div id="logo-desktop">
-                <img src={logo} alt="logo" className="logo-img" />
+        <div id="logo-desktop">
+          <IconButton edge="start" className=" " color="inherit" aria-label="menu">
+            <img src={logo} alt="logo" className="logo-img" />
+          </IconButton>
+          <Typography variant="h6" className= " ">
+          
                 <div className="logo-title">
                   MIURAC  
                 </div>
-              </div>
-          </Typography>
-          <div className={classes.grow} />
-          <div className={classes.sectionDesktop} id="MenuItem">
-             <MenuItem >
-                <p>About us</p>
-            </MenuItem>
-            <MenuItem>
-                <p>Solutions</p>
-            </MenuItem>
-            <MenuItem>
-                <p>Contact us</p>
-            </MenuItem>
-            <MenuItem hover="none">
-                <button className="button-nav">
-                    Apply Now
-                </button>
-            </MenuItem>
+          </Typography>  
+        </div>
+          <div id="Nav-Links">
+            <Button >About us</Button>
+            <Button >Solutions</Button>
+            <Button >Contact us</Button>
+            <button id="button-nav">Apply now</button>
           </div>
-          <div className={classes.sectionMobile} id="MenuItem">
-              
-    <div className="logo-mobile">
-      <img src={logo} alt="logo" className="logo-img" />  
-      <div className="logo-title">
-        MIURAC
-      </div>
-    </div>
+          <div>
             <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
+              edge="end"
+              id="menu-icon" aria-label="menu"
+              onClick={handleDrawerOpen}
+              display="none"
             >
               <MenuIcon />
             </IconButton>
           </div>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
-    </div>
+      <Drawer
+        variant='temporary'
+        anchor="right"
+        open={open}
+      >
+        <div>
+          <IconButton onClick={handleDrawerClose}>
+             <ChevronRightIcon />
+          </IconButton>
+          
+          <div id="Nav-Links-drawer">
+            <MenuItem><Button >About us</Button></MenuItem>
+            <MenuItem><Button >Solutions</Button></MenuItem>
+            <MenuItem><Button >Contact us</Button></MenuItem>
+            <MenuItem><button id="button-nav">Apply now</button></MenuItem>
+            
+            
+          </div>
+        </div>
+      </Drawer>
+      </div>
   );
 }
