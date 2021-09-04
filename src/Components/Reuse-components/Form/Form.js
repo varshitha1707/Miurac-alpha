@@ -4,6 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import './Form.css'
 
+// Yup validation schema
 const schema = yup.object().shape({
   name: yup.string().required(),
   age: yup.number().positive().integer().required(),
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <div id="container">
+      {/* Contact Form */}
       <h1 className="form-title">Get in touch With <span style={{color: 'rgba(60, 185, 255, 0.9)'}}>Us?</span></h1>      
       <form id="contact_form" onSubmit={handleSubmit(onSubmit)}> 
         <div className="name">

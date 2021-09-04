@@ -5,6 +5,7 @@ function QuoteA() {
     return (
         <div className="Quote" >
             <div className="Quote-all-text">
+                {/* Home page Quote text */}
                 <div className="Quote-title">
                     <h1>The <span style={{ color: '#00A9F5'}} >art</span> of Tech management</h1>
                 </div>

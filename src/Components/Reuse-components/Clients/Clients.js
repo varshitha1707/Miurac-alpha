@@ -8,6 +8,7 @@ import Carousel from 'react-elastic-carousel'
 import './Clients.css'
 
 function Clients() {
+    // Clients data
     const clients = [
         {
             id: 1,
@@ -58,11 +59,13 @@ function Clients() {
             }}>
             <h3>Our Clients</h3>
             </div>
+            {/* the clients carousel */}
             <Carousel 
             breakPoints={breakpoints} 
             enableAutoPlay={true} 
             showArrows={false} 
             style={{margin:'-45px 0px'}}>
+                {/* Mapping out the data */}
                 {clients.map(client => (
                         <Grid Container className="container">
                             <Grid item className="grid-item" style={{

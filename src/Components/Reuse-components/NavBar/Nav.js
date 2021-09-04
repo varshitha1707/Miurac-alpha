@@ -12,7 +12,7 @@ import './Nav.css';
 import { MenuItem } from '@material-ui/core';
 
 
-
+// functions for the navbar
 export default function NavBar() {
   const [open, setOpen] = React.useState(false);
 
@@ -26,6 +26,7 @@ export default function NavBar() {
 
   return (
       <div id= "navbar-container">
+        {/* Desktop navbar */}
         <AppBar id= "navbar" >
         <Toolbar>
         <div id="logo-desktop">
@@ -57,6 +58,7 @@ export default function NavBar() {
           </div>
         </Toolbar>
       </AppBar>
+      {/* Drawer is enabled when width is decreased */}
       <Drawer
         variant='temporary'
         anchor="right"
@@ -72,7 +74,6 @@ export default function NavBar() {
             <MenuItem><Button >Solutions</Button></MenuItem>
             <MenuItem><Button >Contact us</Button></MenuItem>
             <MenuItem><button id="button-nav">Apply now</button></MenuItem>
-            
             
           </div>
         </div>

@@ -13,12 +13,14 @@ function WhyUs() {
             <div className="WhyUs-main-title">
                 <h1>Why work with <span style={{color:'#00A9F5'}}>Us?</span></h1>
             </div>
+            {/* Using alternating grid from reusable components */}
             <AlternatingGrid name={'WhyUs'} values={data} ></AlternatingGrid>
         </div>
     )
 }
 
 export default WhyUs
+// Why us page data 
 const data= [
     {
         id: 1,

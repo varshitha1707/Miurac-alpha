@@ -9,6 +9,7 @@ function Footer() {
               <Container spacing={3}  className="Footer-container">
                 <Grid container spacing={3} className="Footer-item-container" >
                     <Grid item xs={6} sm={6} md={6} lg={3} className="Footer-item">
+                      {/* Footer section-1 */}
                       <div className="Footer-heading">
                         <h3>About</h3>
                       </div>
@@ -18,6 +19,7 @@ function Footer() {
                       <a>Careers</a>
                     </Grid>
                     <Grid item xs={6} sm={6} md={6} lg={3} className="Footer-item">
+                      {/* Footer section 2 */}
                       <h3>Services</h3>
                       <a>Web Development</a>
                       <a>App Development</a>
@@ -26,23 +28,24 @@ function Footer() {
                       <a>Product Development</a>
                       <a>Graphic Design</a>
                     </Grid>
-                    {/* <Grid item > */}
                       <Grid item xs={6} sm={6} md={6} lg={3} className="Footer-item">
+                        {/* Footer section 3 */}
                         <h3>Services</h3>
                         <a>Something</a>
                         <a>Something</a>
                         <a>Something</a>
                       </Grid>
                       <Grid item xs={6} sm={6} md={6} lg={3} className="Footer-item">
+                        {/* Footer section 4 */}
                         <h3>Contact us</h3>
                         <a>Something</a>
                         <a>Something</a>
                         <a>Something</a>
                       </Grid>
-                    {/* </Grid> */}
                   </Grid>
                   <Grid container spacing={3} className="Footer-item-container" >
                     <Grid item sm={10} md={6} lg={6} item className="Footer-Miurac-logo">
+                      {/* Miurac logo */}
                       <div className="Footer-logo-icon">
                         <img src={logo} alt="logo" className="footerlogo-img"  />
                       </div>
@@ -51,6 +54,7 @@ function Footer() {
                       </div>
                     </Grid>
                     <Grid item  sm={10} md={6} lg={6} item className="Footer-Socials">
+                      {/* Socials */}
                     <p>Follow us on Social media</p>
                     </Grid>
                   </Grid>

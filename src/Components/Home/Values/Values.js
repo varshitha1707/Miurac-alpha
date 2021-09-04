@@ -9,13 +9,14 @@ import './Values.css'
 function Values() {
     return (
         <div className="Values-UpContainer">
+            {/* Using reusable component alternating grid */}
             <Grid values={values} name={'Values'}/>
         </div>
     )
 }
 
 export default Values
-
+// Values mapped out
 const values= [
     {
         id: 1,

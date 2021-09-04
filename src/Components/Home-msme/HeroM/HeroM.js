@@ -17,9 +17,7 @@ export class Hero extends Component {
                     <Grid item xs={10} sm={10} md={8} lg={5}  className="HeroM-text" >
                         {/* hero title text */}
                             <div className="HeroM-title">
-                                <span>We invest in your ideas 
-                                    to convert into market
-                                    ready Products</span>
+                                <span>We develop your ideas into market ready Apps and Websites</span>
                             </div>
                             <div className="HeroM-subtitle">
                                 <p>We are a bunch of passionate designers and developers who aim to encourage the development of technology and innovation always ready for new challenges.</p>
