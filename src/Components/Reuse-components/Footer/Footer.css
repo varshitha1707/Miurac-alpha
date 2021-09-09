@@ -1,6 +1,6 @@
 .Footer{
-  margin:0px;
-  padding:90px 0px;
+  /* margin:0px; */
+  padding-top:90px;
   background: #E5F5FE;
 }
 .Footer-container{
@@ -37,7 +37,6 @@
 }
 
 .Footer-logo-title{
-  
   font-family: Lato;
   font-style: normal;
   font-weight: 900;
@@ -46,11 +45,13 @@
   padding-top: 20px;
   color: #0A2540;
 }
-.Footer-Socials{
-  display: block;
+.Footer-Socials p{
+  margin-top: 20px;
   font-family: Lato;
   font-size: 35px;
   color: #0A2540;
-  /* padding: 20px; */
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   text-align:center ;
 }

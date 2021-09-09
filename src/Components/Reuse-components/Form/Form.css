@@ -1,7 +1,8 @@
   
 #container {
   width: inherit;
-  padding: 30px;
+  padding-top: 70px;
+  padding-bottom:5px ;
   background: #0A2540;    
 }
 #contact_form {

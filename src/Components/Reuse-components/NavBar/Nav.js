@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -30,9 +31,11 @@ export default function NavBar() {
         <AppBar id= "navbar" >
         <Toolbar>
         <div id="logo-desktop">
+          <Link to="/">
           <IconButton edge="start" className=" " color="inherit" aria-label="menu">
             <img src={logo} alt="logo" className="logo-img" />
           </IconButton>
+          </Link>
           <Typography variant="h6" className= " ">
           
                 <div className="logo-title">
@@ -41,10 +44,18 @@ export default function NavBar() {
           </Typography>  
         </div>
           <div id="Nav-Links">
-            <Button >About us</Button>
-            <Button >Solutions</Button>
-            <Button >Contact us</Button>
-            <button id="button-nav">Apply now</button>
+          <Link to="/about">
+          <button id="Nav-Links-btn" >About us</button>
+          </Link>
+          <Link to="/home">
+          <button id="Nav-Links-btn">Solutions</button>
+          </Link>
+          <Link to="/contact">
+          <button id="Nav-Links-btn">Contact us</button>
+          </Link>
+          <Link to="/contact">
+          <button id="button-nav">Apply now</button>
+          </Link>
           </div>
           <div>
             <IconButton
@@ -70,10 +81,18 @@ export default function NavBar() {
           </IconButton>
           
           <div id="Nav-Links-drawer">
-            <MenuItem><Button >About us</Button></MenuItem>
-            <MenuItem><Button >Solutions</Button></MenuItem>
-            <MenuItem><Button >Contact us</Button></MenuItem>
-            <MenuItem><button id="button-nav">Apply now</button></MenuItem>
+          <Link to="/about">
+          <button id="Nav-Links-btn" >About us</button>
+          </Link>
+          <Link to="/home">
+          <button id="Nav-Links-btn">Solutions</button>
+          </Link>
+          <Link to="/contact">
+          <button id="Nav-Links-btn">Contact us</button>
+          </Link>
+          <Link to="/contact">
+          <button id="button-nav">Apply now</button>
+          </Link>
             
           </div>
         </div>

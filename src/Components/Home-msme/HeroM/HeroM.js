@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './HeroM.css'
 import herosvg from '../../../Assets/img/HeroM/HeroM.svg'
 import Clients from '../../Reuse-components/Clients/Clients'
@@ -25,12 +26,16 @@ export class Hero extends Component {
                         {/* hero buttons */}
                         <br/>
                             <div className="HeroM-buttons">
-                                <button className="button-filled">
-                                Book A Free Consulatation
-                                </button>
-                                <button className="button-un-filled">
-                                See Our Works
-                                </button>
+                                <Link to="/contact">
+                                    <button id="button-filled" className="button-filled">
+                                    Book A Free Consulatation
+                                    </button>
+                                </Link>
+                                <Link to="/about">
+                                    <button id="button-un-filled">
+                                    See Our Works
+                                    </button>
+                                </Link>
                         </div>
                     </Grid >
                 </Grid > 

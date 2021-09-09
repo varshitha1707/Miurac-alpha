@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './Hero.css'
 import icon1 from '../../../Assets/img/Hero/subtitle-icon1.svg'
 import icon2 from '../../../Assets/img/Hero/subtitle-icon2.svg'
@@ -58,12 +59,16 @@ export class Hero extends Component {
                         {/* hero buttons */}
                         <br/>
                             <div className="Hero-buttons">
-                                <button className="button-filled">
-                                Get Funded
-                                </button>
-                                <button className="button-un-filled">
-                                Boost your startup
-                                </button>
+                                <Link to="/contact">
+                                    <button id="button-filled">
+                                    Get Funded
+                                    </button>
+                                </Link>
+                                <Link to="/contact">
+                                    <button id="button-un-filled">
+                                    Boost your startup
+                                    </button>
+                                </Link>
                         </div>
                     </Grid >
                 </Grid > 

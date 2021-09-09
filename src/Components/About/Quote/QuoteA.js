@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './QuoteA.css'
 
 function Quote() {
@@ -11,9 +12,11 @@ function Quote() {
                 </div>
                 <div className="QuoteA-btn" >
                     {/* About page Quote button */}
-                <button className="button-blue-filled" style={{width:"45%"}}>
-                View open positions
-                </button>
+                <Link to="/contact">
+                    <button className="button-blue-filled" style={{width:"45%"}}>
+                    View open positions
+                    </button>
+                </Link>
                 </div>
             </div>
         </div>

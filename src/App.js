@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home';
 import HomeM from './Pages/Home-msme/HomeM';
 import About from './Pages/About/About'
 import './App.css';
+import Contact from './Pages/Contact-us/Contact';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About/>
+          </Route>
+          <Route path="/contact">
+            <Contact/>
           </Route>
         </Switch>
       </BrowserRouter>

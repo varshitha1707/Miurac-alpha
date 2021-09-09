@@ -21,7 +21,29 @@
 }
 #Nav-Links{
     position: absolute;
-    right: 40px;
+    /* text-decoration: none; */
+    right: 70px;
+}
+
+#Nav-Links-btn{
+    border: none;
+    background: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #8E8E93;
+    padding:10px ;
+}
+#Nav-Links-btn:hover{
+    color: #0A2540;
+}
+#Nav-Links-btn:focus{
+    outline: none;
 }
 
 #button-nav{
@@ -32,11 +54,15 @@
     box-shadow: 2px 4px 9px rgba(14, 152, 255, 0.25);
     border-radius: 50px;
     color: #FFFFFF;
-
+    cursor: pointer;
     font-family: Lato;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
+}
+
+#button-nav:hover{
+    background: linear-gradient(96.83deg, #0085FF 0%, #1EADFE 105.85%);
 }
 
 #menu-icon{
@@ -46,7 +72,13 @@
     right: 40px;
 }
 
-@media (min-width: 790px)
+#Nav-Links-drawer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 830px)
 {
     #menu-icon{
         display: none;
@@ -54,7 +86,7 @@
     
 }
 
-@media (max-width: 790px){ 
+@media (max-width:830px){ 
         
 #Nav-Links{
     display: none;

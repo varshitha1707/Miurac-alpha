@@ -12,7 +12,7 @@
 
 
 .HeroM-text{
-    margin-left: 40px;
+    padding-left: 40px;
 }
 
 
@@ -36,41 +36,9 @@
     color: #0A2540;
 }
 
-
 .button-filled{
-    background: linear-gradient(92.83deg, #AAB3FF -6.63%, #4E75FF 112.6%);
-    box-shadow: 5px 9px 15px rgba(167, 182, 255, 0.25);
-    border-radius: 30px;
-    border: none;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 26px;
-    align-self: center;
-    margin-left:10%;
-    padding:15px;
-    height: 60px;
-    width: fit-content;
-    color: #FFFFFF;
-}
-
-.button-un-filled{
-    filter: drop-shadow(5px 9px 15px rgba(226, 171, 249, 0.25));
-    border-radius: 30px;
-    border-color: #8197FF;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 26px;
+    width: max-content;
     padding:10px;
-    align-self: center;
-    margin-left:10%;
-    height: 60px;
-    width: fit-content;
-    color: #8197FF;
-    text-shadow: 0px 2px 9px rgba(130, 152, 255, 0.25);
 }
 
 
@@ -100,19 +68,6 @@
         font-size: 38px;
     }
 
-    .button-filled{
-        font-size: 20px;
-        margin:10px;
-        height: 60px;
-        width: 40%;
-    }
-    .button-un-filled{
-        
-        font-size: 18px;
-        margin:10px ;
-        height: 60px;
-        width: 50%;
-    }
     
 }
 
@@ -135,17 +90,6 @@
     line-height: normal;
     }
 
-    .button-filled{
-        font-size: 20px;
-        height: fit-content;
-        width: fit-content;
-    }
-    .button-un-filled{
-        
-        font-size: 18px;
-        height: fit-content;
-        width: fit-content;
-    }
 
 
 }

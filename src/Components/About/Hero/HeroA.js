@@ -12,7 +12,7 @@ function HeroA() {
                 </div>
                 {/* About page hero subtext */}
                 <div className="HeroA-text">
-                    <p>Concept of Miura fold, a method of folding a sheet of paper into a smaller area. We at Miurac aims to compress various technologies to a densely packed simplistic tool.</p>
+                    <p>Concept of Miura fold, a method of folding a sheet of paper into a smaller area. We at Miurac aim to compress various technologies to a densely packed simplistic tool.</p>
                 </div>
             </div>
         </div>
