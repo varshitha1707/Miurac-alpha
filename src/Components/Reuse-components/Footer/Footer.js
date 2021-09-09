@@ -22,9 +22,11 @@ function Footer() {
                     </Grid>
                     <Grid item xs={6} sm={6} md={6} lg={3} className="Footer-item">
                       {/* Footer section 2 */}
-                      <a href="/home">
-                      <h3>Services</h3>
-                      </a>
+                      <div className="Footer-heading">
+                        <a href="/home">
+                          <h3>Services</h3>
+                        </a>
+                      </div>
                       <a>Web Development</a>
                       <a>App Development</a>
                       <a>Internal Tools</a>
@@ -34,18 +36,22 @@ function Footer() {
                     </Grid>
                       <Grid item xs={6} sm={6} md={6} lg={3} className="Footer-item">
                         {/* Footer section 3 */}
-                        <a href="/">
-                        <h3>Our Works</h3>
-                        </a>
+                        <div className="Footer-heading">
+                          <a href="/">
+                            <h3>Our Works</h3>
+                          </a>
+                      </div>
                         <a>Something</a>
                         <a>Something</a>
                         <a>Something</a>
                       </Grid>
                       <Grid item xs={6} sm={6} md={6} lg={3} className="Footer-item">
                         {/* Footer section 4 */}
-                        <a href="/contact">
-                        <h3>Contact Us</h3>
-                        </a>
+                        <div className="Footer-heading">
+                          <a href="/contact">
+                            <h3>Contact Us</h3>
+                          </a>
+                        </div>
                         <a>Something</a>
                         <a>Something</a>
                         <a>Something</a>

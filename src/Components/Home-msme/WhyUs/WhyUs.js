@@ -4,12 +4,22 @@ import one from '../../../Assets/img/WhyUs/one.svg'
 import two from '../../../Assets/img/WhyUs/two.svg'
 import three from '../../../Assets/img/WhyUs/three.svg'
 import four from '../../../Assets/img/WhyUs/four.svg'
+import top from '../../../Assets/art/WhyUs/top.svg'
+import topleft from '../../../Assets/art/WhyUs/topleft.svg'
+import bottomleft from '../../../Assets/art/WhyUs/bottomleft.svg'
+import right from '../../../Assets/art/WhyUs/right.svg'
 import './WhyUs.css';
 
 // just alight the circles later
 function WhyUs() {
     return (
         <div className="WhyUs-UpContainer">
+            <div className="WhyUs-art">
+            <img className="top-art" src={top} alt="" />
+            <img className="topleft-art" src={topleft} alt="" />
+            <img className="bottomleft-art" src={bottomleft} alt="" />
+            <img className="right-art" src={right} alt="" />
+            </div>
             <div className="WhyUs-main-title">
                 <h1>Why work with <span style={{color:'#00A9F5'}}>Us?</span></h1>
             </div>

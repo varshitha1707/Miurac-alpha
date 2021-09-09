@@ -2,6 +2,9 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import art1 from '../../../Assets/art/blue-circle.svg'
+import art2 from '../../../Assets/art/triangles.svg'
+import art3 from '../../../Assets/art/unfilled-circle.svg'
 import './Form.css'
 
 // Yup validation schema
@@ -22,6 +25,11 @@ export default function App() {
     <div id="container">
       {/* Contact Form */}
       <h1 className="form-title">Get in touch With <span style={{color: 'rgba(60, 185, 255, 0.9)'}}>Us?</span></h1>      
+      <div className="form-art">
+        <img src={art1} alt="" className="circle-form" />
+        <img src={art2} alt="" className="triangles-form"/>
+        <img src={art3} alt="" className="unfilled-form"/>
+      </div>
       <form id="contact_form" onSubmit={handleSubmit(onSubmit)}> 
         <div className="name">
           <label for="name"></label>

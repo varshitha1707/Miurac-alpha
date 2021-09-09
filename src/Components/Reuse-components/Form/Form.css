@@ -61,9 +61,7 @@ input[type='text'], [type='email'],[type='age'],textarea {
   }
   
   input[type='text']:focus, [type='email']:focus,[type='age']:focus, textarea:focus {
-    background: #0A2540;
     outline: none;
-      padding: 0 0 0.875em 0;
   }
   
  
@@ -83,19 +81,47 @@ input[type='text'], [type='email'],[type='age'],textarea {
     color: #FFFFFF;
   }
 
-  /* #form-button:active{
-      translate: Y 2px; ;
-  } */
   
-  /* #form_button:hover {
-    background: ;
-    color: ;
-  } */
+  .form-art{
+    position: relative;
+  }
+
+  .circle-form{
+    position: absolute;
+    top: -185px;
+    left: 40px;
+  }
+
+  .triangles-form{
+    position: absolute;
+    top: 200px;
+    right: 90px;
+
+  }
+
+  .unfilled-form{
+    position: absolute;
+    right: 0px;
+    top: 390px;
+
+  }
   
   @media screen and (max-width: 768px) {
     #contact_form {
       margin: 20px auto;
       width: 75%;
+    }
+    .circle-form{
+      position: absolute;
+      top: -180px;
+      left: 40px;
+    }
+    .unfilled-form{
+      position: absolute;
+      width: 10%;
+      right: 0px;
+      top: 390px;
+  
     }
   }
   
@@ -108,9 +134,14 @@ input[type='text'], [type='email'],[type='age'],textarea {
       width: 65%;
     }
     
-    
     #form_button {
       padding: 15px 25px;
+    }
+    
+    .circle-form{
+      position: absolute;
+      top: -115px;
+      left: 40px;
     }
   }
   
@@ -121,7 +152,13 @@ input[type='text'], [type='email'],[type='age'],textarea {
     
     #contact_form {
       margin: 20px auto;
-      /* width: 75%; */
+    }
+    
+    .circle-form{
+      position: absolute;
+      top: -115px;
+      width: 30%;
+      left: 40px;
     }
     
   }

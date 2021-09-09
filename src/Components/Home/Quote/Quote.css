@@ -33,6 +33,29 @@
     text-align:left; 
 }
 
+.quote-art{
+    position: relative;
+}
+
+.circle-quote{
+    position: absolute;
+    top: -90px;
+}
+
+.triangles-quote{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+
+}
+
+.unfilled-quote{
+    position: absolute;
+    right: -90px;
+    top: 60px;
+
+}
+
 
 @media (max-width: 840px) {
     .Quote-title{
@@ -45,6 +68,13 @@
         width:100%;
         margin:auto
     }
+    
+.triangles-quote{
+    position: absolute;
+    top: 80px;
+    left: -50px;
+
+}
 }
 
 @media (max-width: 350px) {
@@ -57,5 +87,11 @@
     .Quote-all-text{       
         width:100%;
         margin:auto
+    }
+    .triangles-quote{
+        position: absolute;
+        top: 80px;
+        left: -90px;
+    
     }
 }

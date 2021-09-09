@@ -17,6 +17,20 @@
   color: #0A2540;
 }
 
+.Footer-heading a:link{
+  color: #0A2540;
+  text-decoration: none;
+}
+
+.Footer-heading a:visited{
+  color: #0A2540;
+  text-decoration: none;
+}
+
+.Footer-heading a:hover{
+  color: #1EADFE;
+}
+
 .Footer-item{
   display: flex;
   flex-direction: column;
