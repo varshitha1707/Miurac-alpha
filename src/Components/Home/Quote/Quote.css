@@ -1,7 +1,7 @@
 .Quote{
     background:#0A2540; 
     margin:0px; 
-    padding:90px ;
+    padding:80px 5px;
     width: inherit;
     height: max-content;
     align-items:center;
@@ -39,7 +39,7 @@
 
 .circle-quote{
     position: absolute;
-    top: -90px;
+    top: -80px;
 }
 
 .triangles-quote{
@@ -51,7 +51,7 @@
 
 .unfilled-quote{
     position: absolute;
-    right: -90px;
+    right: 0px;
     top: 60px;
 
 }
@@ -69,12 +69,22 @@
         margin:auto
     }
     
-.triangles-quote{
-    position: absolute;
-    top: 80px;
-    left: -50px;
+    .triangles-quote{
+        position: absolute;
+        width: 5%;
+        top: 150px;
+        left: 10px;
+    }
+    
 
-}
+    .circle-quote{
+        width: 15%;
+    }
+
+    .unfilled-quote{
+        width: 5%;
+        top: 35px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -89,9 +99,9 @@
         margin:auto
     }
     .triangles-quote{
-        position: absolute;
+        /* position: absolute;
         top: 80px;
-        left: -90px;
+        left: -90px; */
     
     }
 }
