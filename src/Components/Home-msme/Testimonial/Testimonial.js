@@ -1,10 +1,12 @@
-import React from 'react'
+import {React, useState} from 'react'
 import {Container, Grid, Icon} from '@material-ui/core'
 import photo from '../../../Assets/img/Testimonials/Photo.svg'
 import iconLeft from '../../../Assets/img/Testimonials/iconLeft.svg'
 import iconRight from '../../../Assets/img/Testimonials/iconRight.svg'
 import './Testimonial.css';
 import { motion } from "framer-motion"
+// import {wrap} from '@popmotion/popcorn'
+
 
 function Testimonial() {
 
@@ -19,30 +21,23 @@ function Testimonial() {
         // {
         //     id: 2,
         //     author: 'John Doe',
-            // designation: 'Founder Wipro',
+        //     designation: 'Founder Wipro',
         //     text:'something something something something something something something something',
         //     img: photo,
         // },
         // {
         //     id: 3,
         //     author: 'John Doe',
-            // designation: 'Founder Wipro',
+        //     designation: 'Founder Wipro',
         //     text:'something something something something something something something something',
         //     img: photo,
         // },
     ]
 
-    const variants = {
-        hidden : {
-        //   color: '#ffff'
-        x:100,
-        },
-        visible : {
-          x:-100,
-        //   y:20,
-        //   color: '#0000FF'
-        }
-      }
+    const [[page, direction], setPage] = useState([0, 0])
+    // const feedbackIndex = wrap(0, feedback.length, page)
+
+    
 
 
     return (

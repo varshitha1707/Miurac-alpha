@@ -5,11 +5,13 @@ import HomeM from './Pages/Home-msme/HomeM';
 import About from './Pages/About/About'
 import './App.css';
 import Contact from './Pages/Contact-us/Contact';
+import NavBar from './Components/Reuse-components/NavBar/Nav';
 
 function App() {
   return (
     <div className="App">
        <BrowserRouter>
+       <NavBar/>
         <Switch>
           <Route exact path="/">
             <Home />
