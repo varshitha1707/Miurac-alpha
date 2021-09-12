@@ -26,7 +26,7 @@
   }
   
  
-.age {
+.Mobile{
     float: right;
     width: 45%;
 }
@@ -45,7 +45,7 @@
     width: 45%;
 }
   
-input[type='text'], [type='email'],[type='age'],textarea {
+input[type='text'], [type='email'],[type='Mobile'],textarea {
     background: #0A2540;
     border: none;
     border-bottom: solid 2px rgb(211, 211, 211);
@@ -60,7 +60,7 @@ input[type='text'], [type='email'],[type='age'],textarea {
     font-size: 20px;
   }
   
-  input[type='text']:focus, [type='email']:focus,[type='age']:focus, textarea:focus {
+  input[type='text']:focus, [type='email']:focus,[type='Mobile']:focus, textarea:focus {
     outline: none;
   }
   

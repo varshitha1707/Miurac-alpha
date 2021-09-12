@@ -5,30 +5,18 @@ import * as yup from "yup";
 import art1 from '../../../Assets/art/blue-circle.svg'
 import art2 from '../../../Assets/art/triangles.svg'
 import art3 from '../../../Assets/art/unfilled-circle.svg'
-import { initializeApp, firebase } from "firebase/app";
-// import { fire} from 'firebase/firestore';
+import {db} from './firebaseConfig'
 import './Form.css'
 
 
 // Yup validation schema
 const schema = yup.object().shape({
   name: yup.string().required(),
-  age: yup.number().positive().integer().required(),
+  Mobile: yup.number().positive().integer().required(),
   email: yup.string().email().required(),
   msg: yup.string(150)
 });
 
-
-
-const firebaseConfig = {
-  apiKey: "AIzaSyB2HmYYMMvwo2ZFyDEEeSkrsgXXg83vhM8",
-  authDomain: "miurac.firebaseapp.com",
-  databaseURL: "https://miurac.firebaseio.com",
-  projectId: "miurac",
-  storageBucket: "miurac.appspot.com",
-  messagingSenderId: "558005497129",
-  appId: "1:558005497129:web:c9ce77e0a0df507ec1db38"
-};
 
 
 export default function App() {
@@ -36,15 +24,10 @@ export default function App() {
     resolver: yupResolver(schema)
   });
   
-  
-  
-const app = initializeApp(firebaseConfig);
-const db = app.firestore();
-
-const onSubmit =(data) => {
-        console.log(data);
-        db.firebase.collection('data').add(data);
-        }
+const onSubmit =data => {
+  db.collection('data').add(data);
+  console.log(data);
+}
         
 
   return (
@@ -62,9 +45,9 @@ const onSubmit =(data) => {
           <input type="text"{...register("name")} placeholder="Name:" required/>
           {/* <p style={{color: 'red'}}>{errors.name?.message}</p> */}
         </div>
-    <div className="age">
-      <label for="age"></label>
-      <input type="age" {...register("age")} placeholder="Age:" required/>
+    <div className="Mobile">
+      <label for="Mobile"></label>
+      <input type="Mobile" {...register("Mobile")} placeholder="Mobile:" required/>
       {/* <p style={{color: 'red'}}>{errors.age?.message}</p> */}
     </div>
     <div className="email">
@@ -78,7 +61,7 @@ const onSubmit =(data) => {
       {/* <p style={{color: 'red'}}>{errors.msg?.message}</p> */}
       </div>
     <div className="submit">
-      <button type="submit" value="Send Message" id="form_button" onClick={onSubmit} type="submit" >submit</button>
+      <button type="submit" value="Send Message" id="form_button" type="submit" >submit</button>
     </div>
   </form>
 </div>
